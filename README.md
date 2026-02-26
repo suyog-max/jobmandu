@@ -1,5 +1,5 @@
 # JobMandu - Job Portal Web Application
-A web-based job portal for Nepal built with Python Flask, MySQL, HTML, CSS, and Bootstrap 5.
+A web-based job portal for assigment built with Python Flask, MySQL, HTML, CSS, and Bootstrap 5.
 ## Course
 Web Technology (BIT-233) - Texas College of Management & IT
 ## Student
