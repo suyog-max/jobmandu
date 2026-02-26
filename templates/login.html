@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - JobMandu</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/JobMandu.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index" class="logo-link">
+            <img src="{{ url_for('static', filename='assets/JobMandu.jpg') }}" alt="JobMandu Logo" class="nav-logo">
+            <span class="logo-text">JobMandu</span>
+        </a>
+        <div class="nav-links">
+            <a href="index"><i class='bx bx-home-alt'></i> Home</a>
+            <a href="jobs">Find Jobs</a>
+            <a href="categories">Categories</a>
+            <a href="aboutus">About Us</a>
+            <a href="form">Upload Resume</a>
+            <a href="login" class="active">Sign In</a>
+        </div>
+    </div>
+</nav>
+
+<div class="login-page-container">
+    <div class="wrapper">
+        <form action="{{ url_for('login') }}" method="POST" >
+            {{ form.hidden_tag() }}
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type="text" id="user_name" name="user_name" placeholder="Username" required>
+                <i class='bx bxs-user-pin'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <i class='bx bxs-lock'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" name="remember"> Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+            </div>
+
+            <button type="button" class="home-btn" onclick="history.back()">
+                <i class='bx bx-arrow-back'></i> Back
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

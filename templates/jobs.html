@@ -1,0 +1,182 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - JobMandu</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/JobMandu.jpg') }}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='jobs.css') }}">
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <a href="index" class="logo-link">
+    <img src="{{ url_for('static', filename='assets/JobMandu.jpg') }}" alt="JobMandu Logo" class="nav-logo">
+    <span class="logo-text">JobMandu</span>
+</a>
+        <div class="nav-links">
+              <a href="index"><i class='bx bx-home-alt'></i> Home</a>
+            <a href="jobs" class="active">Find Jobs</a>
+            <a href="categories">Categories</a>
+            <a href="aboutus">About Us</a>
+            <a href="form">Upload Resume</a>
+            <a href="login">Sign In</a>
+        </div>
+    </div>
+</nav>
+
+<div class="main">
+
+    <aside class="filters">
+        <h3><i class='bx bx-filter-alt'></i> Filters</h3>
+
+        <div class="filter-group">
+            <p><b>Category</b></p>
+            <input type="checkbox" id="it"> <label for="it">IT & Software</label><br>
+            <input type="checkbox" id="edu"> <label for="edu">Education</label><br>
+            <input type="checkbox" id="mkt"> <label for="mkt">Marketing</label><br>
+            <input type="checkbox" id="acc"> <label for="acc">Accounts</label><br>
+            <input type="checkbox" id="hos"> <label for="hos">Hospitality</label><br>
+        </div>
+
+        <div class="filter-group">
+            <p><b>Job Type</b></p>
+            <input type="checkbox" id="ft"> <label for="ft">Full Time</label><br>
+            <input type="checkbox" id="pt"> <label for="pt">Part Time</label><br>
+            <input type="checkbox" id="re"> <label for="re">Remote</label><br>
+        </div>
+
+        <div class="filter-group">
+            <p><b>Location</b></p>
+            <input type="checkbox" id="ktm"> <label for="ktm">Kathmandu</label><br>
+            <input type="checkbox" id="ltp"> <label for="ltp">Lalitpur</label><br>
+            <input type="checkbox" id="pkr"> <label for="pkr">Pokhara</label><br>
+        </div>
+
+        <button class="apply-btn">Apply Filters</button>
+    </aside>
+
+    <main class="jobs">
+
+        <div class="card top-job">
+            <div class="card-info">
+                <h4>Assistant Administrative <span class="badge">Top</span></h4>
+                <p class="company">Saraswoti Business Group</p>
+                <p class="loc"><i class='bx bx-map'></i> Putalisadak, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Accounts Manager</h4>
+                <p class="company">Educational Consultancy</p>
+                <p class="loc"><i class='bx bx-map'></i> Dillibazar, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Machine Learning Engineer</h4>
+                <p class="company">Software Company</p>
+                <p class="loc"><i class='bx bx-map'></i> Jawalakhel, Lalitpur</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>PHP Developer</h4>
+                <p class="company">Beetech Solution</p>
+                <p class="loc"><i class='bx bx-map'></i> Chabahil, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>SEO Specialist</h4>
+                <p class="company">Australian IT Company</p>
+                <p class="loc"><i class='bx bx-cloud'></i> Remote</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Factory Worker</h4>
+                <p class="company">Saraswoti Business Group</p>
+                <p class="loc"><i class='bx bx-map'></i> Budhanilkantha</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Senior Marketing Officer</h4>
+                <p class="company">5 Star Hotel</p>
+                <p class="loc"><i class='bx bx-map'></i> Kalimati, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>System Administrator</h4>
+                <p class="company">E-learning Platform</p>
+                <p class="loc"><i class='bx bx-map'></i> Durbarmarg, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Finance Officer</h4>
+                <p class="company">International LED Solutions</p>
+                <p class="loc"><i class='bx bx-map'></i> Pepsicola, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Medical Billing Assistant</h4>
+                <p class="company">Global Software Co.</p>
+                <p class="loc"><i class='bx bx-map'></i> Naxal, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+        <div class="card">
+            <div class="card-info">
+                <h4>Content Writer</h4>
+                <p class="company">Digital Marketing Agency</p>
+                <p class="loc"><i class='bx bx-cloud'></i> Remote</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+         
+        <div class="card">
+            <div class="card-info">
+                <h4>HR Executive</h4>
+                <p class="company">Tech Innovators</p>
+                <p class="loc"><i class='bx bx-map'></i> Thapathali, Kathmandu</p>
+            </div>
+            <button class="apply-btn-job">Apply Job</button>
+        </div>
+
+    </main>
+
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 JobMandu. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

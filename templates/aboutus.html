@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JobMandu</title>
+     <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/JobMandu.jpg') }}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutus.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index" class="logo-link">
+            <img src="{{ url_for('static', filename='assets/JobMandu.jpg') }}" alt="JobMandu Logo" class="nav-logo">
+            <span class="logo-text">JobMandu</span>
+        </a>
+        <div class="nav-links">
+            <a href="index"><i class='bx bx-home-alt'></i> Home</a>
+            <a href="jobs">Find Jobs</a>
+            <a href="categories">Categories</a>
+            <a href="aboutus" class="active">About Us</a>
+            <a href="form">Upload Resume</a>
+            <a href="login">Sign In</a>
+        </div>
+    </div>
+</nav>
+
+<header class="about-hero">
+    <h1>About Our Platform</h1>
+    <p>Empowering the workforce of Nepal through digital connectivity.</p>
+</header>
+
+<div class="main-container">
+    <section class="mission-flex">
+        <div class="mission-text">
+            <h2>Our Mission</h2>
+            <p>JobMandu was founded with a simple goal: to make job hunting in Nepal transparent and efficient. We connect talented individuals with top-tier companies across the country.</p>
+            <p>We focus on local opportunities, ensuring that whether you are in Kathmandu, Pokhara, or Biratnagar, your next career move is just a click away.</p>
+            <p>Our dedicated team works tirelessly to vet employers and job postings, providing a safe and reliable platform for all users.</p>
+        </div>
+        <div class="mission-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800" alt="Team Collaboration">
+        </div>
+    </section>
+</div>
+
+<section class="what-we-do">
+    <div class="container">
+        <div class="section-header">
+            <span>Our Philosophy</span>
+            <h2>WHAT WE DO</h2>
+        </div>
+        <div class="philosophy-text">
+            <p>We value long-term relationships; our professionals aim to be upfront with diverse solutions that can generate an atmosphere of trust and confidence for us in the hearts of our clients.</p>
+            <p>We offer a range of services for our clients which ranges from Job Posting, Permanent placement, Headhunt/executive search, and Management consultation services.</p>
+            <p>We believe in continuous improvement and innovation, constantly updating our platform to meet the evolving needs of job seekers and employers alike.</p>
+            <p>At JobMandu, we are more than just a job portal; we are a community dedicated to fostering career growth and development in Nepal.</p>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class='bx bx-paper-plane'></i>
+                <h3>Job Posting</h3>
+                <p>Reach thousands of qualified candidates instantly through our high-traffic portal.</p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-search-alt'></i>
+                <h3>Recruitment Services</h3>
+                <p>End-to-end permanent placement and headhunting for executive-level talent.</p>
+            </div>
+            <div class="feature-card"> <i class='bx bx-trending-up'></i>
+                <h3>Training</h3>
+                <p>Skill development programs to keep your workforce ahead of industry trends.</p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-briefcase'></i>
+                <h3>Management Consulting</h3>
+                <p>Strategic consultation to streamline your internal HR and management processes.</p>
+            </div>
+            <div class="service-card">
+                <i class='bx bx-shield-quarter'></i>
+                <h3>Background Verification</h3>
+                <p>Comprehensive verification services to ensure candidate authenticity and reliability.</p>
+        </div>
+           <div class="service-card">
+                <i class='bx bx-support'></i>
+                <h3>24/7 Support</h3>
+                <p>Dedicated customer service to assist both job seekers and employers at any time.</p>
+            </div>
+    </div>
+</section>
+
+<div class="info-container">
+    <div class="info-header">
+        <h1>How JobMandu Works</h1>
+        <p>Everything you need to know about navigating our career platform.</p>
+    </div>
+
+    <h2 class="section-title">For Job Seekers</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <i class='bx bx-user-plus'></i>
+            <h3>Creating a Profile</h3>
+            <p>Your profile is your digital resume. Ensure your skills are up-to-date so employers can find you easily.</p>
+        </div>
+        <div class="info-card">
+            <i class='bx bx-search-alt'></i>
+            <h3>Smart Job Search</h3>
+            <p>Use our advanced filters to sort jobs by category, type, and location.</p>
+        </div>
+        <div class="info-card">
+            <i class='bx bx-paper-plane'></i>
+            <h3>Application Process</h3>
+            <p>Click 'Apply' to send your profile directly to the employer's dashboard.</p>
+        </div>
+        
+    </div>
+
+    <h2 class="section-title">Safety & Privacy</h2>
+    <div class="info-grid">
+        <div class="info-card">
+            <i class='bx bx-shield-quarter'></i>
+            <h3>Verified Employers</h3>
+            <p>We manually review company registrations to ensure job postings are legitimate.</p>
+        </div>
+        <div class="info-card">
+            <i class='bx bx-lock-alt'></i>
+            <h3>Data Protection</h3>
+            <p>Your personal information is encrypted and never shared with third parties.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 JobMandu. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

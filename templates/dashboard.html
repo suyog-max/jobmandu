@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - JobMandu</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <div class="logo-details">
+            <img src="{{ url_for('static', filename='assets/JobMandu.jpg') }}" alt="Logo" class="nav-logo">
+            <span class="logo_name">JobMandu</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active"><i class='bx bx-grid-alt'></i><span>Overview</span></a></li>
+            <li><a href="#"><i class='bx bx-briefcase'></i><span>My Applications</span></a></li>
+            <li><a href="#"><i class='bx bx-bookmark'></i><span>Saved Jobs</span></a></li>
+            <li><a href="#"><i class='bx bx-user'></i><span>Profile</span></a></li>
+            <li><a href="#"><i class='bx bx-cog'></i><span>Settings</span></a></li>
+            <li class="log_out"><a href="{{ url_for('logout') }}"><i class='bx bx-log-out'></i><span>Logout</span></a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="dash-header">
+            <div class="welcome">
+                <h1>Welcome back, {{ session['user'] }}!</h1>
+                <p>Here's what's happening with your job search today.</p>
+            </div>
+            <div class="user-profile">
+                <i class='bx bx-bell'></i>
+                <img src="https://ui-avatars.com/api/?name=User&background=198754&color=fff" alt="User Avatar">
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>12</h3>
+                    <p>Applied Jobs</p>
+                </div>
+                <i class='bx bx-send'></i>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>4</h3>
+                    <p>Interviews</p>
+                </div>
+                <i class='bx bx-calendar-check'></i>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>28</h3>
+                    <p>Profile Views</p>
+                </div>
+                <i class='bx bx-show'></i>
+            </div>
+        </section>
+
+        <section class="recent-applications">
+            <div class="card-header">
+                <h2>Recent Applications</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            
+            <table class="app-table">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Date Applied</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tech Nepal</td>
+                        <td>Frontend Developer</td>
+                        <td>Feb 15, 2026</td>
+                        <td><span class="status pending">Under Review</span></td>
+                    </tr>
+                    <tr>
+                        <td>Kathmandu Soft</td>
+                        <td>UI/UX Designer</td>
+                        <td>Feb 12, 2026</td>
+                        <td><span class="status success">Interview</span></td>
+                    </tr>
+                    <tr>
+                        <td>Biratnagar Solutions</td>
+                        <td>Backend Developer</td>
+                        <td>Feb 10, 2026</td>
+                        <td><span class="status danger">Closed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

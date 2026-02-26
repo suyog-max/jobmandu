@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - JobMandu</title>
+       <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/JobMandu.jpg') }}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='categories.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index" class="logo-link">
+            <img src="{{ url_for('static', filename='assets/JobMandu.jpg') }}" alt="JobMandu Logo" class="nav-logo">
+            <span class="logo-text">JobMandu</span>
+        </a>
+        <div class="nav-links">
+            <a href="index"><i class='bx bx-home-alt'></i> Home</a>
+            <a href="jobs">Find Jobs</a>
+            <a href="categories" class="active">Categories</a>
+            <a href="aboutus">About Us</a>
+            <a href="form">Upload Resume</a>
+            <a href="login">Sign In</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="category-header">
+        <h1>Browse by Category</h1>
+        <p>Find the job that fits your skills and interests</p>
+    </div>
+
+    <div class="category-grid">
+        <div class="category-card">
+            <i class='bx bx-laptop'></i>
+            <h4>IT & Software</h4>
+            <p>150+ Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-book-reader'></i>
+            <h4>Education</h4>
+            <p>45 Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-calculator'></i>
+            <h4>Accounts & Finance</h4>
+            <p>30 Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-trending-up'></i>
+            <h4>Sales & Marketing</h4>
+            <p>80+ Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-restaurant'></i>
+            <h4>Hospitality</h4>
+            <p>60+ Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-plus-medical'></i>
+            <h4>Health Care</h4>
+            <p>25 Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-hard-hat'></i>
+            <h4>Construction</h4>
+            <p>40+ Openings</p>
+        </div>
+
+        <div class="category-card">
+            <i class='bx bx-headphone'></i>
+            <h4>Customer Service</h4>
+            <p>55 Openings</p>
+        </div>
+        <div class="category-card">
+            <i class='bx bx-briefcase'></i>
+            <h4>Management</h4>
+            <p>35 Openings</p>
+    </div>
+        <div class="category-card">
+            <i class='bx bx-palette'></i>
+            <h4>Design & Creative</h4>
+            <p>20 Openings</p>
+</div>
+        <div class="category-card">
+            <i class='bx bx-cog'></i>
+            <h4>Engineering</h4>
+            <p>50+ Openings</p>
+        </div>
+        <div class="category-card">
+            <i class='bx bx-world'></i>
+            <h4>Others</h4>
+            <p>15 Openings</p>
+    </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 JobMandu. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

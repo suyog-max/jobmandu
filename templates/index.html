@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobMandu</title>
+       <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/JobMandu.jpg') }}">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+            <img src="{{ url_for('static', filename='assets/JobMandu.jpg') }}" height="40" class="me-2" alt="JobMandu logo">
+            JobMandu
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="jobs">Find Jobs</a></li>
+                <li class="nav-item"><a class="nav-link" href="categories">Job Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="form">Upload Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus">About Us</a></li>
+            </ul>
+
+            <a href="login" class="btn btn-success">Sign In / Sign Up</a>
+        </div>
+    </div>
+</nav>
+<!-- ================= HERO ================= -->
+<header class="py-5 bg-light border-bottom">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-5 fw-bold mb-3">Find Your Dream Job</h1>
+                <p class="lead text-muted mb-4">
+                    Hit your career goals. Join JobMandu to find the right job and the right company.
+                </p>
+                <!-- Improved Search -->
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Job title, keywords...">
+                    <button class="btn btn-success px-4">Search</button>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center d-none d-lg-block">
+                <img src="{{ url_for('static', filename='assets/job-design.png') }}" class="img-fluid rounded-3 mt-4" alt="Job search">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ================= STATS ================= -->
+<section class="py-5 bg-white text-center">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">500+</h3>
+                <p class="text-muted small">Live Jobs</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">150+</h3>
+                <p class="text-muted small">Companies</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">10k+</h3>
+                <p class="text-muted small">Candidates</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">25+</h3>
+                <p class="text-muted small">Categories</p>
+            </div>
+             
+            <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">5k+</h3>
+                <p class="text-muted small">Resumes Uploaded</p>
+        </div>
+           <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">1k+</h3>
+                <p class="text-muted small">Jobs Filled</p>
+    </div>
+              <div class="col-6 col-md-3">
+                 <h3 class="fw-bold text-success">50+</h3>
+                 <p class="text-muted small">Recruitment Partners</p>
+        </div>
+            <div class="col-6 col-md-3">
+                <h3 class="fw-bold text-success">24/7</h3>
+                <p class="text-muted small">Support</p>
+                </div>
+    </div>
+
+</section>
+<!-- ================= FEATURED JOBS ================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold h4">Featured Jobs</h2>
+            <a href="jobs" class="btn btn-outline-success btn-sm">Browse All</a>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Job 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-success-subtle text-success mb-2">Full Time</span>
+                        <h6 class="fw-bold">Accounts Manager</h6>
+                        <p class="text-muted small mb-3">Saraswoti Business Group</p>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <span class="small text-muted">
+                                <i class='bx bx-map'></i> Kathmandu
+                            </span>
+                           <a href="form" class="btn btn-success btn-sm">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-warning-subtle text-warning mb-2">Urgent</span>
+                        <h6 class="fw-bold">PHP Developer</h6>
+                        <p class="text-muted small mb-3">Tech Solutions Nepal</p>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <span class="small text-muted">
+                                <i class='bx bx-map'></i> Lalitpur
+                            </span>
+                              <a href="form" class="btn btn-success btn-sm">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-info-subtle text-info mb-2">Remote</span>
+                        <h6 class="fw-bold">SEO Specialist</h6>
+                        <p class="text-muted small mb-3">Marketing Agency</p>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <span class="small text-muted">
+                                <i class='bx bx-map'></i> Nepal
+                            </span>
+                            <a href="form" class="btn btn-success btn-sm">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Job 4 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-success-subtle text-success mb-2">Full Time</span>
+                        <h6 class="fw-bold">Marketing Manager</h6>
+                        <p class="text-muted small mb-3">Creative Minds Pvt Ltd</p>
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <span class="small text-muted">
+                                <i class='bx bx-map'></i> Pokhara
+                            </span>
+                           <a href="form" class="btn btn-success btn-sm">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Job 5 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-warning-subtle text-warning mb-2">Urgent</span>
+                        <h6 class="fw-bold">Graphic Designer</h6>
+                        <p class="text-muted small mb-3">Design Studio</p>
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <span class="small text-muted">
+                                <i class='bx bx-map'></i> Biratnagar
+                            </span>
+                              <a href="form" class="btn btn-success btn-sm">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Job 6 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-info-subtle text-info mb-2">Remote</span>
+                        <h6 class="fw-bold">Content Writer</h6>
+                        <p class="text-muted small mb-3">Media House</p>
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <span class="small text-muted">
+                                <i class='bx bx-map'></i> Nepal 
+                            </span>
+                            <a href="form" class="btn btn-success btn-sm">Apply</a>
+                            </div>
+                            </div>  
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <h5 class="fw-bold">JobMandu</h5>
+                <p class="text-secondary small">
+                    Connecting top talent with the best companies across Nepal.
+                </p>
+
+                <div class="d-flex gap-3">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="jobs" class="text-white text-decoration-none">Find Jobs</a></li>
+                    <li><a href="categories" class="text-white text-decoration-none">Categories</a></li>
+                    <li><a href="aboutus" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="form" class="text-white text-decoration-none">Upload Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h5>Newsletter</h5>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <button class="btn btn-success">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 small text-secondary">
+            © 2026 JobMandu. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
